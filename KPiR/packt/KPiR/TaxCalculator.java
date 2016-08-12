@@ -38,7 +38,7 @@ public class TaxCalculator extends Database {
 			profi.setMonth(sc.nextInt());
 			sc.nextLine();
 		} catch (InputMismatchException ex) {
-
+			System.out.println("Dane w nieprawidlowym formacie");
 		}
 
 		double final_Tax = (totalProfit() - totalCost() + profi.getBenefice() - profi.getDeposit()) * 0.18 - 586.85
