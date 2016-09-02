@@ -64,15 +64,11 @@ public class Database implements IDatabase {
 
 		System.out.println("--------------------");
 		System.out.println("Wprowadzone dane do tabeli kosztow: ");
-		for (Cost cost : costs) {
-			System.out.println(cost);
-		}
+		costs.stream().forEach(cost -> System.out.println(cost));
 
 		System.out.println("--------------------");
 		System.out.println("Wprowadzone dane do tabeli kosztow: ");
-		for (Profit profit : profits) {
-			System.out.println(profit);
-		}
+		profits.stream().forEach(profit -> System.out.println(profit));
 	}
 
 }
