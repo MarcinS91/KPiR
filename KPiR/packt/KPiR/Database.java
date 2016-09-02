@@ -67,7 +67,7 @@ public class Database implements IDatabase {
 		costs.stream().forEach(cost -> System.out.println(cost));
 
 		System.out.println("--------------------");
-		System.out.println("Wprowadzone dane do tabeli kosztow: ");
+		System.out.println("Wprowadzone dane do tabeli dochodów: ");
 		profits.stream().forEach(profit -> System.out.println(profit));
 	}
 
