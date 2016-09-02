@@ -11,17 +11,15 @@ public class TaxCalculator extends Database {
 	public static double totalCost() {
 
 		double totalCost = 0;
-		for (Cost cost : costs) {
-			totalCost += cost.getValue();
-		}
+		totalCost = costs.stream().mapToDouble(cost -> cost.getValue()).sum();
+
 		return totalCost;
 	}
 
 	public static double totalProfit() {
 		double totalProfit = 0;
-		for (Profit profit : profits) {
-			totalProfit += profit.getValue();
-		}
+		totalProfit = profits.stream().mapToDouble(profit -> profit.getValue()).sum();
+
 		return totalProfit;
 	}
 
