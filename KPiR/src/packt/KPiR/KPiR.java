@@ -12,6 +12,7 @@ public class KPiR {
 	private static final int REMOVE_PROFIT = 5;
 	private static final int PRINT_ALL = 6;
 	private static final int EXIT = 7;
+	private static final int HELP = 8;
 
 	public static void main(String[] args) {
 
@@ -59,6 +60,8 @@ public class KPiR {
 				solve.PRINT_ALL();
 				break;
 
+			case HELP:
+				solve.HELP();
 			case EXIT:
 
 				break;
@@ -75,11 +78,12 @@ public class KPiR {
 		System.out.println("Dostepne opcje: ");
 		System.out.println(CALCULATE + "- obliczenie podatku");
 		System.out.println(ADD_COST + "- dodanie pozycji do tabeli kosztow");
-		System.out.println(ADD_PROFIT + "- dodaj pozycje do tabeli przychodow ");
+		System.out.println(ADD_PROFIT + "- dodanie pozycji do tabeli przychodow ");
 		System.out.println(REMOVE_COST + "- usun pozycje z tabeli kosztow");
 		System.out.println(REMOVE_PROFIT + "- usun pozycje z tabeli przychodow");
 		System.out.println(PRINT_ALL + "- pokaz wprowadzone dane");
 		System.out.println(EXIT + "- wyjscie z programu");
+		System.out.println(HELP + "- pomoc");
 		System.out.print("Wybierz opcje: ");
 
 	}
