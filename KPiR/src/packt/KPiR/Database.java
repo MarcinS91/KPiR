@@ -71,4 +71,10 @@ public class Database implements IDatabase {
 		profits.stream().forEach(profit -> System.out.println(profit));
 	}
 
+	public void HELP() {
+		System.out.println("Usuwanie pierwszej pozycji z tabeli mo¿liwe jest poprzez wybranie klawisza 0 (aby usun¹c drug¹ wybieramy 1 etc.)");
+		System.out.println("Wartoœc podatku ustalona jest na 18%");
+		System.out.println("Aplikacja nie uwzglednia liczenia kilometrowki");
+	}
+
 }
